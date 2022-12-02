@@ -29,7 +29,8 @@ const contribMensual = 150000
 
 const totalContrib = montoInicial + cantMeses * contribMensual
 
-const fixedInterest = 1.66 / 12
+const fixedInterest = 1.66 / 12 // interes anual / 12 meses
+// uf dic 2021 - nov 2022, 0: primer dia dic, 1: ultimo dia dic, 2: ultimo dia ene, 3: ultimo dia feb ...
 const ufArray = [
   30776, 30991, 31212, 31539, 31727, 32176, 32679, 33086, 33417, 33836, 34258,
   34600, 34811,
