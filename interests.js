@@ -11,9 +11,8 @@ const getCompoundInterest = (amount, interest, period, contrib = 0) => {
 const getRetornoUF = (amount, interest, contrib, ufArray) => {
   const ufConv = amount / ufArray[0]
   const interestUF = ufConv + ufConv * interest
-  const finalUF = ufArray[1] - ufArray[0]
   const total = Math.round(interestUF * ufArray[1]) + contrib
-  const newArray = ufArray.splice(0, 1)
+  ufArray.splice(0, 1) // borra primer elemento
   if (ufArray.length === 1) {
     return total
   } else {
